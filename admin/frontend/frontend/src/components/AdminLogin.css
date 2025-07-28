@@ -1,0 +1,47 @@
+/* Background gradient for full page */
+.login-background {
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9, #e8eaf6);
+}
+
+/* Login card styling */
+.login-box {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  color: #002a5f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo animation */
+.animate-logo {
+  animation: floatCar 3s ease-in-out infinite;
+}
+
+@keyframes floatCar {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(12px); }
+  100% { transform: translateX(0); }
+}
+
+/* Input and Button style for better spacing (Bootstrap overrides) */
+.form-control {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+   background: linear-gradient(120deg, #0d2a42, #304d6d, #94b7dd);
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f, #002a5f);
+  transform: scale(1.03);
+}
