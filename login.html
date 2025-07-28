@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARRUS - Login</title>
+  <!-- <link rel="stylesheet" href="carrusCSS/login.css" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <h1 style="font-family: 'Underdog', system-ui; font-weight: 700; font-size: 2.5rem; color: #9fc2e7; letter-spacing: 0.05em; text-transform: uppercase;">
+        Carr<span style="color: #335778;">Us</span>
+      </h1>
+    </div>
+    <div class="nav-links">
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Log In</a>
+    </div>
+  </nav>
+
+  <div class="container" id="form-container">
+    <h2 id="form-title">Login</h2>
+    <form action="login.php" method="POST">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" name="email" id="login-email" required />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" name="password" id="login-password" required />
+      </div>
+      <button type="submit">Login</button>
+      <div class="toggle-btn">
+        <a href="signup.html">Don't have an account? Sign Up</a>
+      </div>
+      <div class="toggle-btn">
+        <a href="./admin/frontend/frontend/src/AdminLogin.js">Log in as admin</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="stats-container">
+  <div class="stat-card">
+    <h3>Total Users</h3>
+    <p>1,254</p>
+  </div>
+  <div class="stat-card">
+    <h3>Logins Today</h3>
+    <p>86</p>
+  </div>
+  <div class="stat-card">
+    <h3>Active Sessions</h3>
+    <p>12</p>
+  </div>
+</div>
+
+
+<script>
+  fetch('stats.php')
+    .then(res => res.json())
+    .then(data => {
+      document.querySelectorAll('.stat-card')[0].querySelector('p').textContent = data.total_users;
+      document.querySelectorAll('.stat-card')[1].querySelector('p').textContent = data.logins_today;
+      document.querySelectorAll('.stat-card')[2].querySelector('p').textContent = data.active_sessions;
+    })
+    .catch(err => console.error('Error fetching stats:', err));
+</script>
+
+
+</body>
+</html>
