@@ -1,0 +1,115 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #cfdde7;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background: linear-gradient(to right, #002244 0%, #041E42 50%, #5D8AA8 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #cccccc;
+}
+
+.container {
+  max-width: 1000px;
+
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #98C0D2, white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#profile-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+.default-profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 100px;
+  object-fit: cover;
+  background-color: #ccc;
+}
+
+#user-info p {
+  margin: 8px 0;
+}
+
+.edit-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #002244;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.stats-summary {
+  background-color: #dce9f3;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+#bookings-container {
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+}
+
+.booking-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.booking-card p {
+  margin: 5px 0;
+}
+
+.cancel-btn {
+  background-color: #b91c1c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
