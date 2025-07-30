@@ -14,7 +14,6 @@ This is a car rental website developed as a **Versity Mini Project**. It allows 
 - [Key Features](#key-features)
 - [User Stories](#user-stories)
 - [Admin Panel](#admin-panel)
-- [Project Report](#project-report)
 - [License](#license)
 - [Demo](#demo)
 - [Author](#author)
@@ -46,7 +45,7 @@ It includes car browsing, driver selection, lend cars, join as driver and profil
    ```bash
    git clone https://github.com/Mif-taa/CarrUs_A_Car_Rental-System.git
    ```
-3. Import the SQL file from the `database/` folder (`carproject.sql`) into **phpMyAdmin**.
+3. Import the SQL file from the `database/` folder (`carrus.sql`) into **phpMyAdmin**.
 4. Update your database credentials in `includes/db.php`.
 5. Start Apache and MySQL from the XAMPP Control Panel.
 6. Open your browser and go to:
