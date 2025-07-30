@@ -132,18 +132,9 @@ Admin Panel built with **React.js**:
 - Animated stats (Chart.js)
 ---
 
-## 📄 License
-
-MIT License © [Your Name]  
-See `LICENSE` file for full details.
-
----
-
 ## 🎥 Demo
 
 - 📸 Screenshots: See `assets/screenshots/`
-- 🔗 Live Demo (optional): _Add link if deployed_
-- 📹 Video Walkthrough: _Add video link if available_
 
 ---
 
